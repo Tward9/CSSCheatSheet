@@ -1,0 +1,77 @@
+:root {
+    --light:rgb(173, 215, 241);
+    --dark:rgb(11, 20, 73);
+    --border: .2em dotted purple;
+    --glow: rgb(243, 112, 193);
+}
+
+* {
+    color: var(--dark);
+    background-color: var(--light);
+    text-align: center;
+}
+
+header{
+    padding:4em;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);  
+}
+
+header h1{
+    width: auto;
+    background-color: transparent;
+    
+}
+
+header p{
+    background-color: transparent;
+}
+
+.sheetbox h2{
+    padding: .25em;
+}
+
+section {
+    display: flex;
+    padding: 2em;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sheetbox{
+    padding: 1em;
+    border: var(--border);
+}
+
+.codebox{
+    border: var(--border);
+}
+
+.codebox:hover{
+    box-shadow: 10px 5px 5px var(--glow);
+}
+
+.codebox pre:focus{
+    user-select: all;
+    background: yellow;
+}
+
+footer {
+    padding:2em;
+    width: auto;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);  
+}
+footer h3{
+    background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    .sheetbox {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .sheetbox {
+        flex-grow: 1;
+    }
+}
