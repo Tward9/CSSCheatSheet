@@ -35,11 +35,14 @@ section {
     padding: 2em;
     justify-content: space-around;
     flex-wrap: wrap;
+    
 }
 
 .sheetbox{
     padding: 1em;
     border: var(--border);
+    flex-basis: 250px;
+    flex-grow: 1;
 }
 
 .codebox{
