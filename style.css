@@ -53,9 +53,8 @@ section {
     box-shadow: 10px 5px 5px var(--glow);
 }
 
-.codebox pre:focus{
+.codebox{
     user-select: all;
-    background: yellow;
 }
 
 footer {
